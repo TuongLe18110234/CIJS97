@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Hobby from './Hobby/Hobby';
 import TodoList from './TodoList/TodoList';
+import TodoApp from './TodoApp/TodoApp';
 
 function App() {
   // const arr = [1, 2, 3, 4, 5];
@@ -43,6 +44,8 @@ function App() {
       </button> */}
 
       {!isLoggedIn && <button>Login</button>}
+
+      <TodoApp />
     </div>
   );
 }
